@@ -10,13 +10,13 @@ function scrollToProducts() {
 const products = [
 
   { 
-    name: "Product Name Here",
+    name: "DRESSTELLS Cocktail Dresses",
     category: "clothes",
-    price: "$00",
-    oldPrice: "$00",
+    price: "11,714",
+    oldPrice: "PKR 15,000",
     stock: "In Stock", // ya "Limited"
-    img: "IMAGE_URL_HERE",
-    link: "PASTE_YOUR_AMAZON_AFFILIATE_LINK_HERE"
+    img: "https://m.media-amazon.com/images/I/6127knDdNIL._AC_SX522_.jpg",
+    link: "https://amzn.to/3Op1KF3"
   },
 
   { 
@@ -75,3 +75,4 @@ products.forEach(product => {
 
     container.appendChild(card);
 });
+

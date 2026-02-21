@@ -1,229 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- ================= META ================= -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hassan Luxe | Premium</title>
 
-    <!-- ================= SEO ================= -->
-    <meta name="description" content="Hassan Luxe - Premium Luxury Fashion Collection. Exclusive Hoodies, Jackets & Streetwear Deals.">
-    <meta name="keywords" content="Hassan Luxe, Luxury Fashion, Streetwear, Hoodies, Jackets, Amazon Affiliate Fashion">
-    <meta name="author" content="Hassan Luxe">
+<!-- PREMIUM FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
 
-    <title>Hassan Luxe | Luxury Fashion Store</title>
+<style>
 
-    <!-- ================= FONTS ================= -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+/* ===== GLOBAL ===== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
 
-    <!-- ================= CSS ================= -->
-    <link rel="stylesheet" href="style.css">
+body{
+background:linear-gradient(135deg,#0f0f0f,#1a1a1a);
+color:white;
+overflow-x:hidden;
+}
+
+/* ===== BIG COLOURFUL TITLE ===== */
+.main-title{
+text-align:center;
+font-size:70px;
+font-family:'Montserrat',sans-serif;
+font-weight:900;
+margin:60px 0 30px 0;
+
+background:linear-gradient(90deg,#ff0000,#ff00ff,#00ffff,#ffcc00);
+background-size:300%;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:gradientMove 5s infinite linear;
+}
+
+@keyframes gradientMove{
+0%{background-position:0%}
+100%{background-position:300%}
+}
+
+/* ===== SHAPE CONTAINER ===== */
+.shape-container{
+width:90%;
+max-width:1200px;
+margin:50px auto;
+padding:50px;
+
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+border-radius:40px;
+box-shadow:0 0 40px rgba(0,0,0,0.6);
+border:2px solid rgba(255,255,255,0.1);
+}
+
+/* Sections inside shape */
+.section-box{
+margin-bottom:40px;
+padding:30px;
+border-radius:25px;
+background:rgba(255,255,255,0.07);
+border:1px solid rgba(255,255,255,0.15);
+transition:0.4s;
+}
+
+.section-box:hover{
+transform:scale(1.03);
+background:rgba(255,255,255,0.12);
+}
+
+/* Buttons */
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+font-weight:600;
+cursor:pointer;
+background:linear-gradient(90deg,#ff0000,#ff00ff);
+color:white;
+transition:0.3s;
+}
+
+button:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px #ff00ff;
+}
+
+</style>
 </head>
 
 <body>
 
-    <!-- ================= BACKGROUND LAYERS ================= -->
-    <div class="background-animation"></div>
+<!-- ===== BIG CENTER TITLE ===== -->
+<h1 class="main-title">Hassan Luxe</h1>
 
-    <!-- ================= TOP BAR ================= -->
-    <div class="top-bar">
-        <div class="top-left">
-            <span>🔥 Exclusive Luxury Deals</span>
-        </div>
-        <div class="top-right">
-            <span>Premium Fashion Collection 2026</span>
-        </div>
-    </div>
+<!-- ===== SHAPED CONTENT AREA ===== -->
+<div class="shape-container">
 
-    <!-- ================= HEADER ================= -->
-    <header class="main-header">
-        <div class="logo-container">
-            <h1 class="logo">Hassan Luxe</h1>
-        </div>
+<div class="section-box">
+<h2>🔥 Exclusive Luxury Deals</h2>
+<p>Premium Hoodies, Jackets & Streetwear Collection</p>
+<button>Shop Now</button>
+</div>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#featured">Featured</a></li>
-                <li><a href="#products">Shop</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Support</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="section-box">
+<h2>✨ Why Choose Us?</h2>
+<ul>
+<li>✔ Premium Quality</li>
+<li>✔ Limited Stock</li>
+<li>✔ Secure Shopping</li>
+<li>✔ Modern Design</li>
+</ul>
+</div>
 
-    <!-- ================= HERO SECTION ================= -->
-    <section id="home" class="hero-section">
+<div class="section-box">
+<h2>📩 Contact Support</h2>
+<p>Email: hassanimranrd9@gmail.com</p>
+</div>
 
-        <div class="hero-overlay"></div>
-
-        <div class="hero-content">
-            <h2 class="hero-title">
-                Elevate Your Style <br>
-                With <span>Luxury Streetwear</span>
-            </h2>
-
-            <p class="hero-description">
-                Discover premium hoodies, jackets & fashion essentials.
-                Limited stock. Elite look. Unmatched confidence.
-            </p>
-
-            <div class="hero-buttons">
-                <button class="explore-btn" onclick="scrollToProducts()">Explore Collection</button>
-                <a href="#contact" class="secondary-btn">Contact Support</a>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- ================= FEATURE SECTION ================= -->
-    <section id="featured" class="featured-section">
-
-        <div class="section-header">
-            <h2>Why Choose Hassan Luxe?</h2>
-            <p>Luxury quality curated from top fashion brands.</p>
-        </div>
-
-        <div class="features-grid">
-
-            <div class="feature-card">
-                <h3>Premium Quality</h3>
-                <p>High-end fashion pieces selected for durability and elite comfort.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Limited Stock</h3>
-                <p>Exclusive designs that maintain uniqueness and prestige.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Secure Shopping</h3>
-                <p>Buy directly from trusted marketplace through verified links.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Luxury Experience</h3>
-                <p>Modern interface with smooth animations and premium visuals.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= PRODUCTS SECTION ================= -->
-    <section id="products" class="products-section">
-
-        <div class="section-header">
-            <h2>Featured Products</h2>
-            <p>Explore trending fashion picks</p>
-        </div>
-
-        <!-- PRODUCTS AUTO LOAD FROM JS -->
-        <div class="products-container" id="productsContainer"></div>
-
-    </section>
-
-    <!-- ================= ABOUT SECTION ================= -->
-    <section id="about" class="about-section">
-
-        <div class="about-container">
-
-            <div class="about-text">
-                <h2>About Hassan Luxe</h2>
-                <p>
-                    Hassan Luxe is a modern luxury fashion showcase platform.
-                    We curate stylish clothing pieces from leading brands and connect
-                    fashion lovers directly to trusted marketplaces.
-                </p>
-                <p>
-                    Our goal is to provide a premium browsing experience with smooth
-                    motion visuals, bold gradients and high-end aesthetic design.
-                </p>
-            </div>
-
-            <div class="about-stats">
-                <div class="stat-box">
-                    <h3>2026</h3>
-                    <p>Founded</p>
-                </div>
-                <div class="stat-box">
-                    <h3>Premium</h3>
-                    <p>Collection</p>
-                </div>
-                <div class="stat-box">
-                    <h3>Elite</h3>
-                    <p>Design</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= CTA SECTION ================= -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Upgrade Your Wardrobe Today</h2>
-            <p>Luxury fashion is just one click away.</p>
-            <button class="explore-btn" onclick="scrollToProducts()">Shop Now</button>
-        </div>
-    </section>
-
-    <!-- ================= CONTACT SECTION ================= -->
-    <section id="contact" class="contact-section">
-
-        <div class="contact-container">
-
-            <h2>Contact Support</h2>
-
-            <p>If you have any questions regarding products or purchases, feel free to reach out.</p>
-
-            <div class="contact-info">
-                <p><strong>Email:</strong> hassanimranrd9@gmail.com</p>
-                <p><strong>Response Time:</strong> Within 24 Hours</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="main-footer">
-
-        <div class="footer-top">
-            <div class="footer-brand">
-                <h3>Hassan Luxe</h3>
-                <p>Luxury fashion curated for elite personalities.</p>
-            </div>
-
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Shop</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Support</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-legal">
-                <h4>Legal</h4>
-                <p>
-                    As an Amazon Associate, we earn from qualifying purchases.
-                    Product prices and availability are subject to change.
-                </p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 Hassan Luxe. All Rights Reserved.</p>
-        </div>
-
-    </footer>
-
-    <!-- ================= JS ================= -->
-    <script src="script.js"></script>
+</div>
 
 </body>
 </html>

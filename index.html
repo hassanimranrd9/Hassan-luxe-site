@@ -3,125 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hassan Luxe | Premium</title>
+<title>Hassan Luxe | Ultra Premium</title>
 
+<!-- ✅ EXTERNAL CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- ✅ FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:linear-gradient(135deg,#000000,#111111,#1a1a1a);
-color:white;
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-/* ===== BIG COLORFUL TITLE ===== */
-.brand-title{
-font-family:'Montserrat',sans-serif;
-font-size:70px;
-font-weight:900;
-text-align:center;
-margin-top:60px;
-
-background:linear-gradient(90deg,#ff0000,#ff00ff,#00ffff,#ffcc00);
-background-size:300%;
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-
-animation:move 6s infinite linear;
-}
-
-@keyframes move{
-0%{background-position:0%;}
-100%{background-position:300%;}
-}
-
-/* ===== MAIN SHAPE BOX ===== */
-.shape-box{
-margin-top:60px;
-width:90%;
-max-width:1200px;
-padding:60px;
-border-radius:40px;
-
-background:rgba(255,255,255,0.06);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,0.2);
-box-shadow:0 0 60px rgba(0,0,0,0.7);
-}
-
-/* Section Cards */
-.card{
-padding:30px;
-margin-bottom:30px;
-border-radius:25px;
-background:rgba(255,255,255,0.08);
-border:1px solid rgba(255,255,255,0.15);
-transition:0.4s ease;
-}
-
-.card:hover{
-transform:scale(1.05);
-background:rgba(255,255,255,0.15);
-box-shadow:0 0 25px #ff00ff;
-}
-
-/* Button */
-.btn{
-padding:12px 28px;
-border:none;
-border-radius:30px;
-cursor:pointer;
-font-weight:600;
-background:linear-gradient(90deg,#ff0000,#ff00ff);
-color:white;
-transition:0.3s;
-}
-
-.btn:hover{
-transform:translateY(-4px);
-box-shadow:0 0 20px #ff00ff;
-}
-
-</style>
 </head>
 <body>
 
-<h1 class="brand-title">Hassan Luxe</h1>
+<!-- ================= BACKGROUND LIGHTS ================= -->
+<div class="light light1"></div>
+<div class="light light2"></div>
 
-<div class="shape-box">
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+<h1 class="brand-logo">Hassan Luxe</h1>
 
-<div class="card">
-<h2>🔥 Luxury Deals</h2>
-<p>Premium Hoodies • Jackets • Streetwear Collection</p>
-<button class="btn">Shop Now</button>
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+</nav>
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="hero">
+
+<h2 class="hero-title">
+Elevate Your Style <br>
+<span>Luxury With Power</span>
+</h2>
+
+<p class="hero-text">
+Premium Fashion • Direct Amazon Affiliate • Limited Collection
+</p>
+
+<button class="hero-btn" onclick="scrollToProducts()">
+🔥 Explore Collection
+</button>
+
+</section>
+
+
+<!-- ================= 2 LUXURY SHAPES ================= -->
+<section class="luxury-row">
+
+<div class="luxury-shape shape-one">
+<h2>🔥 Premium Deals</h2>
+<p>Exclusive Hoodies • Jackets • Streetwear</p>
+<button class="mini-btn" onclick="scrollToProducts()">Shop Now</button>
 </div>
 
-<div class="card">
-<h2>✨ Why Us?</h2>
-<ul>
-<li>✔ High Quality</li>
-<li>✔ Limited Stock</li>
-<li>✔ Secure Links</li>
-<li>✔ Modern Design</li>
-</ul>
+<div class="luxury-shape shape-two">
+<h2>💎 Secure Shopping</h2>
+<p>Affiliate Link Opens Direct On Amazon</p>
+<p class="highlight-text">100% Safe & Fast</p>
 </div>
 
-<div class="card">
-<h2>📩 Contact</h2>
-<p>Email: hassanimranrd9@gmail.com</p>
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+<section id="products" class="products-section">
+
+<h2 class="section-title">🔥 Featured Products</h2>
+
+<div class="products-container" id="productsContainer"></div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="luxury-row">
+
+<div class="luxury-shape shape-one">
+<h2>About Hassan Luxe</h2>
+<p>
+Premium Brand Built For Elite Fashion Lovers.
+All Buy Buttons Redirect To Amazon Affiliate Link.
+</p>
 </div>
 
-</div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+<p>© 2026 Hassan Luxe | All Rights Reserved</p>
+</footer>
+
+
+<!-- ✅ CONNECT JS -->
+<script src="script.js"></script>
 
 </body>
 </html>

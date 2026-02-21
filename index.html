@@ -5,122 +5,119 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hassan Luxe | Premium</title>
 
-<!-- PREMIUM FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-/* ===== GLOBAL ===== */
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#0f0f0f,#1a1a1a);
+background:linear-gradient(135deg,#000000,#111111,#1a1a1a);
 color:white;
-overflow-x:hidden;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
-/* ===== BIG COLOURFUL TITLE ===== */
-.main-title{
-text-align:center;
-font-size:70px;
+/* ===== BIG COLORFUL TITLE ===== */
+.brand-title{
 font-family:'Montserrat',sans-serif;
+font-size:70px;
 font-weight:900;
-margin:60px 0 30px 0;
+text-align:center;
+margin-top:60px;
 
 background:linear-gradient(90deg,#ff0000,#ff00ff,#00ffff,#ffcc00);
 background-size:300%;
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 
-animation:gradientMove 5s infinite linear;
+animation:move 6s infinite linear;
 }
 
-@keyframes gradientMove{
-0%{background-position:0%}
-100%{background-position:300%}
+@keyframes move{
+0%{background-position:0%;}
+100%{background-position:300%;}
 }
 
-/* ===== SHAPE CONTAINER ===== */
-.shape-container{
+/* ===== MAIN SHAPE BOX ===== */
+.shape-box{
+margin-top:60px;
 width:90%;
 max-width:1200px;
-margin:50px auto;
-padding:50px;
-
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
+padding:60px;
 border-radius:40px;
-box-shadow:0 0 40px rgba(0,0,0,0.6);
-border:2px solid rgba(255,255,255,0.1);
+
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 0 60px rgba(0,0,0,0.7);
 }
 
-/* Sections inside shape */
-.section-box{
-margin-bottom:40px;
+/* Section Cards */
+.card{
 padding:30px;
+margin-bottom:30px;
 border-radius:25px;
-background:rgba(255,255,255,0.07);
+background:rgba(255,255,255,0.08);
 border:1px solid rgba(255,255,255,0.15);
-transition:0.4s;
+transition:0.4s ease;
 }
 
-.section-box:hover{
-transform:scale(1.03);
-background:rgba(255,255,255,0.12);
+.card:hover{
+transform:scale(1.05);
+background:rgba(255,255,255,0.15);
+box-shadow:0 0 25px #ff00ff;
 }
 
-/* Buttons */
-button{
-padding:12px 25px;
+/* Button */
+.btn{
+padding:12px 28px;
 border:none;
 border-radius:30px;
-font-weight:600;
 cursor:pointer;
+font-weight:600;
 background:linear-gradient(90deg,#ff0000,#ff00ff);
 color:white;
 transition:0.3s;
 }
 
-button:hover{
-transform:translateY(-5px);
+.btn:hover{
+transform:translateY(-4px);
 box-shadow:0 0 20px #ff00ff;
 }
 
 </style>
 </head>
-
 <body>
 
-<!-- ===== BIG CENTER TITLE ===== -->
-<h1 class="main-title">Hassan Luxe</h1>
+<h1 class="brand-title">Hassan Luxe</h1>
 
-<!-- ===== SHAPED CONTENT AREA ===== -->
-<div class="shape-container">
+<div class="shape-box">
 
-<div class="section-box">
-<h2>🔥 Exclusive Luxury Deals</h2>
-<p>Premium Hoodies, Jackets & Streetwear Collection</p>
-<button>Shop Now</button>
+<div class="card">
+<h2>🔥 Luxury Deals</h2>
+<p>Premium Hoodies • Jackets • Streetwear Collection</p>
+<button class="btn">Shop Now</button>
 </div>
 
-<div class="section-box">
-<h2>✨ Why Choose Us?</h2>
+<div class="card">
+<h2>✨ Why Us?</h2>
 <ul>
-<li>✔ Premium Quality</li>
+<li>✔ High Quality</li>
 <li>✔ Limited Stock</li>
-<li>✔ Secure Shopping</li>
+<li>✔ Secure Links</li>
 <li>✔ Modern Design</li>
 </ul>
 </div>
 
-<div class="section-box">
-<h2>📩 Contact Support</h2>
+<div class="card">
+<h2>📩 Contact</h2>
 <p>Email: hassanimranrd9@gmail.com</p>
 </div>
 
